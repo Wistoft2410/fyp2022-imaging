@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from skimage import morphology
 from scipy.spatial.distance import cdist
-from scipy.stats.stats import mode
+from scipy.stats import mode
 
 
 def scatter_data(x1, x2, y, ax=None):
@@ -74,3 +74,12 @@ def knn_classifier(x_train, y_train, x_validation, x_test, k):
     y_pred_test = predicted_labels[len(x_validation):]
     
     return y_pred_validation, y_pred_test
+
+def main():
+    print(scatter_data)
+    print(measure_area_perimeter)
+    print(knn_classifier)
+
+
+if __name__ == "__main__":
+    main()
